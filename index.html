@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nazibur Rahman</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        gap: 6px 6px;
+        grid-template-areas:
+          "empty1 empty1 empty1"
+          "side1 image side2"
+          "empty2 empty2 empty2";
+      }
+
+      .empty1 {
+        grid-area: empty1;
+      }
+
+      .empty2 {
+        grid-area: empty2;
+      }
+
+      .side2 {
+        grid-area: side2;
+      }
+
+      .side1 {
+        grid-area: side1;
+      }
+
+      .image {
+        grid-area: image;
+      }
+      .imagee {
+        margin-left: 38%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="empty1"></div>
+      <div class="empty2"></div>
+      <div class="side2"></div>
+      <div class="side1"></div>
+      <div class="image">
+        <img class="imagee" src="Group 8.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
